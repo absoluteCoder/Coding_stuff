@@ -9,7 +9,7 @@ public:
   BIT(int n){
     bit.resize(n+1, 0);
   }
-  void update(int index, int val = 1){
+  void update(int index, T val = 1){
     index++;
     while(index < bit.size()){
       bit[index] += val;
